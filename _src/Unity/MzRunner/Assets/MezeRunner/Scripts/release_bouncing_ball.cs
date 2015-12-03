@@ -7,10 +7,7 @@ public class release_bouncing_ball : MonoBehaviour {
 
 	private bool alreadyApplied = false;
 
-	void Start() {
-
-	}
-
+	// Caso o personagem ative o trigger, a esfera recebe uma força para que comece a se movimentar
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag ("Personagem") && !alreadyApplied) {

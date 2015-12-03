@@ -4,12 +4,8 @@ using System.Collections;
 public class TesteScript : MonoBehaviour {
 
 	public Camera myCamera;
-	// Use this for initialization
-	void Start () {
 	
-	}
-	
-	// Update is called once per frame
+	// Faz a tela tremer ao pressionar T
 	void Update () {
 	
 		if(Input.GetKey ("t")){

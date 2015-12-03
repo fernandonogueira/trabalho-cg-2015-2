@@ -8,7 +8,8 @@ public class CameraPadrao : MonoBehaviour {
 	private float tremerFator;
 	private Vector3 posicaoOriginal;
 	private Quaternion rotacaoOriginal;
-	
+
+	// Movimenta a camera
 	void Update ()
 	{
 		if (tremerFator > 0)
@@ -22,7 +23,7 @@ public class CameraPadrao : MonoBehaviour {
 			tremerFator -= tremerVelocidade;
 		}
 	}
-	
+	// Faz a tela tremer
 	public void Tremer()
 	{
 		posicaoOriginal = transform.position;

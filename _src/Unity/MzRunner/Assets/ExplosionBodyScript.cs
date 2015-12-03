@@ -6,7 +6,8 @@ public class ExplosionBodyScript : MonoBehaviour {
 	public float size = 10;
 	public float power = 900;
 	public GameObject effect;
-	
+
+	// Faz o efeito de explosao
 	void Explodir(){
 		Vector3 explosionPos = transform.position;
 		Collider[] colliders = Physics.OverlapSphere(explosionPos, size);
@@ -21,16 +22,6 @@ public class ExplosionBodyScript : MonoBehaviour {
 				rb.AddExplosionForce(power, explosionPos, size, 3.0F);
 			
 		}
-	}
-	
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 	
 	void OnCollisionEnter(Collision collision) {
