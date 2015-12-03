@@ -14,6 +14,7 @@ public class release_bouncing_ball : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag ("Personagem") && !alreadyApplied) {
+			alreadyApplied = true;
 			esfera.AddForce(new Vector3(0,-400,-800));
 		}
 	}
